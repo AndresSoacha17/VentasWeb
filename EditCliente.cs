@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using VentasWeb.Clases;
+using VentasWeb.Classes;
+
+namespace VentasWeb
+{
+    public partial class EditCliente
+    {
+        public static int Insertar(Cliente cliente)
+        {
+            SqlParameter[] dbParams = new SqlParameter[]
+				{
+                    DBHelper.MakeParam("@Nombre", SqlDbType.VarChar, 0, cliente.Nombre),
+                    DBHelper.MakeParam("@Domicilio", SqlDbType.VarChar, 0, cliente.Domicilio),
+                    DBHelper.MakeParam("@Telefono", SqlDbType.VarChar, 0, cliente.Telefono),
+                    DBHelper.MakeParam("@Email", SqlDbType.VarChar, 0, cliente.Email),
+				};
+            return Convert.ToInt32(DBHelper.ExecuteScalar("usp_EditCliente_Insertar", dbParams));
+        }
+    }
+}

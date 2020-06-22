@@ -1,0 +1,5 @@
+c:\users\andre\documents\visual studio 2012\Projects\VentasWeb\VentasWeb\bin\VentasWeb.dll
+c:\users\andre\documents\visual studio 2012\Projects\VentasWeb\VentasWeb\bin\VentasWeb.pdb
+c:\users\andre\documents\visual studio 2012\Projects\VentasWeb\VentasWeb\obj\Debug\VentasWeb.csprojResolveAssemblyReference.cache
+c:\users\andre\documents\visual studio 2012\Projects\VentasWeb\VentasWeb\obj\Debug\VentasWeb.dll
+c:\users\andre\documents\visual studio 2012\Projects\VentasWeb\VentasWeb\obj\Debug\VentasWeb.pdb
